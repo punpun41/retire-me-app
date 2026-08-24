@@ -1,4 +1,4 @@
-```markdown
+
 <div align="center">
   <h1>🌱 Retire Me!</h1>
   <p><i>Gamified Micro-Saving & Habit Tracker — Bangun Avatar Pensiun Impianmu!</i></p>
