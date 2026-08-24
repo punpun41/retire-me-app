@@ -30,7 +30,7 @@ Menyederhanakan persiapan pensiun menjadi *micro-habits* harian yang menyenangka
 
 ## 📱 Screenshots
 
-> *(Tambahkan tautan gambar tangkapan layar aplikasi di sini nantinya)*
+> *
 
 ---
 
