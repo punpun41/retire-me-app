@@ -75,6 +75,9 @@
 ├── assets/           # Images, avatars, and custom icons
 └── pubspec.yaml      # Project dependencies
 ## Getting Started
+```
+
+
 
 To get a local copy up and running, follow these simple steps.
 
