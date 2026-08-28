@@ -1,41 +1,76 @@
-
 <div align="center">
-  <h1>🌱 Retire Me!</h1>
-  <p><i>Gamified Micro-Saving & Habit Tracker — Bangun Avatar Pensiun Impianmu!</i></p>
+
+  <img src="docs/images/app-logo.png" alt="Retire Me! logo" width="180" />
+
+  <p align="center">
+    <img src="docs/images/app-mockup.png" alt="Retire Me! mockup" width="100%" />
+  </p>
+
+  # Retire Me!
+
+  **A gamified mobile application designed to help young adults plan for retirement and build healthy habits through daily check-ins.**
+
+  <br />
+
+  ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+  ![Platform](https://img.shields.io/badge/Platform-iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
+  ![Framework](https://img.shields.io/badge/Framework-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+
 </div>
 
 ---
 
-## 📖 About The Project
-**Retire Me!** adalah aplikasi persiapan masa tua berbasis gamifikasi yang mengonversi kebiasaan menahan pengeluaran impulsif harian ("Tahan Jajan") menjadi proyeksi tabungan investasi dan pencegahan risiko kesehatan secara real-time. 
+## Table of contents
 
-Dengan pendekatan *"Tamagotchi Masa Depan"*, aplikasi ini memberikan kepuasan instan untuk membantu generasi muda membangun fondasi keuangan dan gaya hidup sehat secara konsisten menuju masa pensiun impian mereka.
+- [Project overview](#project-overview)
+- [Key features](#key-features)
+- [Technology stack](#technology-stack)
+- [Project structure](#project-structure)
+- [Team](#team)
 
-### ⚠️ The Problem
-Banyak generasi muda mengabaikan persiapan pensiun karena terasa kaku dan terlalu jauh di masa depan. Akibatnya, kebiasaan belanja impulsif harian serta gaya hidup tidak sehat (seperti konsumsi gula/kalori tinggi dan merokok) terus dilakukan tanpa menyadari dampaknya yang terakumulasi.
+## Project overview
 
-### 💡 The Solution
-Menyederhanakan persiapan pensiun menjadi *micro-habits* harian yang menyenangkan. Hanya dengan satu interaksi harian **"Tahan Jajan"**, aplikasi memvisualisasikan dampak ganda: menghitung nilai pertumbuhan uang melalui bunga majemuk, sekaligus melacak zat buruk yang berhasil dihindari oleh tubuh.
+| Item | Details |
+| --- | --- |
+| Application Type | Mobile Application |
+| Primary Platform | Android & iOS |
 
----
+"Retire Me!" is an offline-first, gamified retirement preparation app targeted at young adults and professionals. It solves the problem of delayed financial and health planning by turning daily habit tracking—like avoiding junk food, saving small amounts of money, or completing life pillar missions—into a rewarding game complete with EXP, level progression, and long-term compound interest projections.
 
-## ✨ Key Features
-- **🚪 Seamless Onboarding (Guest Mode):** Inisialisasi cepat tanpa akun. Atur target pensiun, *archetype* gaya hidup, dan 1 *Guilty Pleasure* utama.
-- **🏠 Home Dashboard & Future Avatar:** Pantau *streak* harian, visualisasi *Future Avatar* yang dinamis, dan *Daily Check-in* (Financial, Health, Social, Purpose).
-- **📈 Progress Tracker:** Kalkulasi *real-time* proyeksi investasi (bunga majemuk) dan akumulasi kesehatan (gula/kalori/nikotin yang diselamatkan).
-- **📋 Daily Missions & Weekly Report:** Daftar *mini-quests* harian berdasarkan 4 pilar pensiun dan rekapitulasi evaluasi setiap 7 hari.
-- **🏆 Profile & Achievements:** Pengaturan variabel target, manajemen profil, dan galeri *badges/achievements*.
+## Key features
 
----
+| Feature | What the user can do |
+| --- | --- |
+| **Gamified Onboarding** | Choose a retirement archetype and a "Guilty Pleasure" to avoid daily. |
+| **Daily Check-in** | Evaluate 4 life pillars (Financial, Health, Social, Purpose) and confirm habit avoidance to earn EXP. |
+| **Compound Interest Projection** | Visualize estimated future retirement funds based on real daily savings. |
+| **Health Metrics Conversion** | Track tangible lifetime health impacts (e.g., avoided sugar grams or nicotine sticks). |
+| **Dynamic Avatar & Badges** | Level up the "Future Avatar" and unlock achievement badges based on consistency. |
+| **Daily Mini Missions** | Complete simple daily tasks across the 4 pillars to boost weekly EXP. |
 
-## 📱 Screenshots
 
-> *
+## Technology stack
 
----
+| Category | Technology | Purpose |
+| --- | --- | --- |
+| Frontend | Flutter & Dart | Cross-platform UI Development |
+| Architecture | Feature-based Architecture | Scalability and code organization |
+| State Management | Provider | Managing global and local application state |
+| Backend & DB | Shared Preferences / Hive | Offline-first data persistence (No Auth) |
+| Data Visualization| fl_chart | Rendering Radar and Line charts for progress tracking |
 
-## 🛠️ Tech Stack
-- **Framework:** Flutter (Dart) 
-- **Data Storage:** Local Storage (Shared Preferences / Hive / SQLite)
+## Project structure
 
----
+```text
+├── lib/
+│   ├── core/         # Shared utilities, constants (colors), and universal widgets
+│   ├── models/       # Data schemas (e.g., user_profile_model.dart)
+│   ├── features/     # Feature modules
+│   │   ├── onboarding/  # Archetype & Habit selection
+│   │   ├── home/        # Dashboard & Daily Check-in logic
+│   │   ├── progress/    # Lifetime projections and charts
+│   │   ├── report/      # Weekly reports and mini-missions
+│   │   └── profile/     # Settings and unlocked badges
+│   └── main.dart     # Entry point of the application
+├── assets/           # Images, avatars, and custom icons
+└── pubspec.yaml      # Project dependencies
