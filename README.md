@@ -74,3 +74,40 @@
 │   └── main.dart     # Entry point of the application
 ├── assets/           # Images, avatars, and custom icons
 └── pubspec.yaml      # Project dependencies
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+*   Flutter SDK installed on your machine.
+*   An editor like VS Code or Android Studio.
+
+### Installation
+
+1.  **Clone the repo**
+    ```sh
+    git clone [https://github.com/punpun41/retire-me-app.git](https://github.com/punpun41/retire-me-app.git)
+    ```
+2.  **Navigate to the project directory**
+    ```sh
+    cd retire_me
+    ```
+3.  **Install dependencies**
+    ```sh
+    flutter pub get
+    ```
+4.  **Run the app**
+    ```sh
+    flutter run
+    ```
+
+---
+
+## Team
+
+| Name | Role | Responsibilities | Contact |
+| --- | --- | --- | --- |
+| Johanes de Brito Farrell Sirait | Mobile Engineer | App architecture, state management, UI slicing, and local database implementation |  |
+| Kania Khalifa Kurniadi | UI/UX Designer | High-fidelity prototyping, design system, and asset illustration |  |
+| Alya Dhamierea Islamay Putri | Product Manager | User research, PRD formulation, and project management |  |
