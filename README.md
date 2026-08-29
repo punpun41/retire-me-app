@@ -56,7 +56,7 @@
 | Frontend | Flutter & Dart | Cross-platform UI Development |
 | Architecture | Feature-based Architecture | Scalability and code organization |
 | State Management | Provider | Managing global and local application state |
-| Backend & DB | Shared Preferences / Hive | Offline-first data persistence (No Auth) |
+| Backend & DB | Shared Preferences | Offline-first data persistence (No Auth) |
 | Data Visualization| fl_chart | Rendering Radar and Line charts for progress tracking |
 
 ## Project structure
